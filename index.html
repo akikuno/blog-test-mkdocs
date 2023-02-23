@@ -328,13 +328,20 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    ライト・ナイトモードの切り替え
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
+  <a href="#_7" class="md-nav__link">
     そのほか注意点⚠️
   </a>
   
@@ -368,7 +375,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
+  <a href="#_8" class="md-nav__link">
     参考資料 🙇
   </a>
   
@@ -534,13 +541,20 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    ライト・ナイトモードの切り替え
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
+  <a href="#_7" class="md-nav__link">
     そのほか注意点⚠️
   </a>
   
@@ -574,7 +588,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
+  <a href="#_8" class="md-nav__link">
     参考資料 🙇
   </a>
   
@@ -717,7 +731,25 @@ echo &quot;order: desc&quot; &gt; docs/blog/.pages
 <ul>
 <li>👆これで<code>docs/blog</code>内にあるファイルは逆順（降順）に表示されるようになります</li>
 </ul>
-<h2 id="_6">そのほか注意点⚠️</h2>
+<h3 id="_6">ライト・ナイトモードの切り替え</h3>
+<ul>
+<li><code>mkdocs.yml</code>の<code>theme</code>下に以下のテキストを追記します</li>
+</ul>
+<pre><code class="language-text">theme:
+  (~~~~~なにかの設定~~~~~)
+  palette:
+    # Palette toggle for light mode
+    - scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+</code></pre>
+<h2 id="_7">そのほか注意点⚠️</h2>
 <h3 id="mkdocs_1">mkdocsのインデントについて</h3>
 <ul>
 <li>リストをネストさせる時のインデントが<strong>スペース4個</strong>です<ul>
@@ -736,7 +768,7 @@ echo &quot;order: desc&quot; &gt; docs/blog/.pages
 <ul>
 <li>著作権表示やジェネレーターの表記をオフにするなど便利機能がいっぱいあります</li>
 </ul>
-<h2 id="_7">参考資料 🙇</h2>
+<h2 id="_8">参考資料 🙇</h2>
 <ul>
 <li><a href="https://aiedoc.github.io/note/Tips/Mkdocs/mkdocs%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%9FGitHubPages/">mkdocsを使ったGitHub Pagesの作成方法</a></li>
 <li><a href="https://msyksphinz.hatenablog.com/entry/2018/07/14/120000">MKDocsを使ってFPGA開発日記の記事まとめページを作り直した</a></li>
