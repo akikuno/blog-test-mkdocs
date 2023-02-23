@@ -1,0 +1,712 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+        <link rel="next" href="blog/1000-01-02/">
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.13">
+    
+    
+      
+        <title>テストブログ</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.ffa9267a.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.a0c5b2b5.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#mkdocsgithub-pages" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="." title="テストブログ" class="md-header__button md-logo" aria-label="テストブログ" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            テストブログ
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              MkDocsでGitHub Pagesを運用する際のメモ
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="テストブログ" class="md-nav__button md-logo" aria-label="テストブログ" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    テストブログ
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          MkDocsでGitHub Pagesを運用する際のメモ
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="." class="md-nav__link md-nav__link--active">
+        MkDocsでGitHub Pagesを運用する際のメモ
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    初期設定
+  </a>
+  
+    <nav class="md-nav" aria-label="初期設定">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    必要なものをインストールします
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#github" class="md-nav__link">
+    GitHubで公開リポジトリを作ります
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mkdocs" class="md-nav__link">
+    mkdocsで記事を作ります
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#github-pages" class="md-nav__link">
+    GitHub Pagesにデプロイします
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    テーマを変更します
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    複数記事の投稿
+  </a>
+  
+    <nav class="md-nav" aria-label="複数記事の投稿">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    記事の表示順を降順にしたいとこ
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    そのほか注意点
+  </a>
+  
+    <nav class="md-nav" aria-label="そのほか注意点">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mkdocs_1" class="md-nav__link">
+    mkdocsのインデントについて
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#git" class="md-nav__link">
+    毎回のGitの認証がめんどうなので記憶します
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    参考資料 🙇
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          Blog
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Blog
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="blog/1000-01-02/" class="md-nav__link">
+        1000-01-02
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="blog/1000-01-01/" class="md-nav__link">
+        1000-01-01
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    初期設定
+  </a>
+  
+    <nav class="md-nav" aria-label="初期設定">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    必要なものをインストールします
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#github" class="md-nav__link">
+    GitHubで公開リポジトリを作ります
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mkdocs" class="md-nav__link">
+    mkdocsで記事を作ります
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#github-pages" class="md-nav__link">
+    GitHub Pagesにデプロイします
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    テーマを変更します
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    複数記事の投稿
+  </a>
+  
+    <nav class="md-nav" aria-label="複数記事の投稿">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    記事の表示順を降順にしたいとこ
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    そのほか注意点
+  </a>
+  
+    <nav class="md-nav" aria-label="そのほか注意点">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mkdocs_1" class="md-nav__link">
+    mkdocsのインデントについて
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#git" class="md-nav__link">
+    毎回のGitの認証がめんどうなので記憶します
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    参考資料 🙇
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="mkdocsgithub-pages">MkDocsでGitHub Pagesを運用する際のメモ</h1>
+<h2 id="_1">初期設定</h2>
+<h3 id="_2">必要なものをインストールします</h3>
+<ul>
+<li><code>mkdocs</code>と<code>mkdocs-material</code>（テーマ）をインストールします</li>
+</ul>
+<pre><code class="language-bash">pip install -U pip
+pip install -U mkdocs mkdocs-material 
+pip install -U mkdocs mkdocs-material 
+</code></pre>
+<h3 id="github">GitHubで公開リポジトリを作ります</h3>
+<ul>
+<li>
+<p>リポジトリ名がURLのブログタイトルになります</p>
+<blockquote>
+<p><code>https://akikuno.github.io/blog-test-mkdocs/</code></p>
+</blockquote>
+</li>
+<li>
+<p>通常のGitHub Pagesのチュートリアルにある「SettingからPages」の設定はしなくて大丈夫です</p>
+</li>
+</ul>
+<h3 id="mkdocs">mkdocsで記事を作ります</h3>
+<pre><code class="language-bash">mkdocs new .
+</code></pre>
+<ul>
+<li>ディレクトリ直下に<code>docs</code>, <code>mkdocs.yml</code>の2つが作られます</li>
+<li><code>docs</code>ディレクトリに<code>index.md</code>が作られます</li>
+</ul>
+<h3 id="github-pages">GitHub Pagesにデプロイします</h3>
+<pre><code class="language-bash">mkdocs gh-deploy
+</code></pre>
+<ul>
+<li>ディレクトリ直下に<code>site</code>が作られます<ul>
+<li><code>site</code>はとくに気にしなくて大丈夫です</li>
+</ul>
+</li>
+</ul>
+<h3 id="_3">テーマを変更します</h3>
+<ul>
+<li>デフォルトでも十分見やすいですが、せっかくなのでテーマを変更してみます</li>
+<li>
+<p>ついでに絵文字を表示できるようにします</p>
+<ul>
+<li><code>:smile:</code>という表記で絵文字が表示できるようになります😄</li>
+</ul>
+</li>
+<li>
+<p><code>mkdocs.yml</code>を以下のように変更します</p>
+</li>
+</ul>
+<pre><code class="language-text">site_name: テストブログ
+
+# テーマを変更します
+theme:
+  name: 'material'
+  palette:
+    primary: 'indigo'
+    accent: 'indigo'
+
+# 絵文字を表示します
+markdown_extensions:
+    - pymdownx.emoji:
+        emoji_generator: !!python/name:pymdownx.emoji.to_alt
+</code></pre>
+<ul>
+<li><code>mkdocs.yml</code>を書き換えたあと、デプロイすれば反映されます</li>
+</ul>
+<pre><code class="language-bash">mkdocs gh-deploy
+</code></pre>
+<h2 id="_4">複数記事の投稿</h2>
+<ul>
+<li>
+<p><code>docs</code>直下に記事をアップしているとサイドバーが見にくくなるので、サイドバーに項目を作ります</p>
+</li>
+<li>
+<p>ここでは<code>docs</code>に<code>blog</code>ディレクトリを作ります</p>
+</li>
+</ul>
+<pre><code class="language-bash">mkdir -p docs/blog
+</code></pre>
+<ul>
+<li><code>docs/blog</code>ディレクトリに記事を2つ作ります</li>
+</ul>
+<pre><code class="language-bash">echo &quot;# blog1&quot; &gt; docs/blog/blog1.md
+echo &quot;# blog2&quot; &gt; docs/blog/blog2.md
+</code></pre>
+<pre><code class="language-bash">mkdocs gh-deploy
+</code></pre>
+<h3 id="_5">記事の表示順を降順にしたいとこ</h3>
+<ul>
+<li>シンプルにURL（マークダウンファイル名）の辞書順のようです<ul>
+<li>以下の構成では<code>1000-01-01</code>が<code>1000-01-02</code>の前に表示されます</li>
+</ul>
+</li>
+</ul>
+<pre><code class="language-bash">echo &quot;# 200&quot; &gt; docs/blog/1000-01-01.md
+echo &quot;# 100&quot; &gt; docs/blog/1000-01-02.md
+</code></pre>
+<ul>
+<li>表示順を日付（ファイル名）の逆順にしたいときには<a href="https://github.com/lukasgeiter/mkdocs-awesome-pages-plugin">MkDocs Awesome Pages Plugin</a>を使います</li>
+</ul>
+<pre><code class="language-bash">pip install -U mkdocs-awesome-pages-plugin
+echo &quot;order: desc&quot; &gt; docs/blog/.pages
+</code></pre>
+<ul>
+<li>👆これで<code>docs/blog</code>内にあるファイルは逆順（降順）に表示されるようになります</li>
+</ul>
+<h2 id="_6">そのほか注意点</h2>
+<h3 id="mkdocs_1">mkdocsのインデントについて</h3>
+<ul>
+<li>リストをネストさせる時のインデントが<strong>スペース4個</strong>です<ul>
+<li>スペース2個では反映されません</li>
+</ul>
+</li>
+</ul>
+<h3 id="git">毎回のGitの認証がめんどうなので記憶します</h3>
+<ul>
+<li>デプロイするときに毎回GitのユーザーIDおよびパスワードを求められるので、以下のコマンドで認証を記憶すると快適です😄</li>
+</ul>
+<pre><code class="language-bash">git config --global credential.helper store
+</code></pre>
+<h2 id="_7">参考資料 🙇</h2>
+<ul>
+<li><a href="https://aiedoc.github.io/note/Tips/Mkdocs/mkdocs%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%9FGitHubPages/">mkdocsを使ったGitHub Pagesの作成方法</a></li>
+<li><a href="https://msyksphinz.hatenablog.com/entry/2018/07/14/120000">MKDocsを使ってFPGA開発日記の記事まとめページを作り直した</a></li>
+<li><a href="https://mkdocs.nakaken88.com/">なかけんのMkDocsノート</a></li>
+<li><a href="https://enu23456.hatenablog.com/entry/2022/12/11/140629">MKDocsで絵文字を使ってみる</a></li>
+<li><a href="https://github.com/mkdocs/mkdocs/issues/714#issuecomment-503439934">Auto-populate navigation sub-sections</a></li>
+<li><a href="https://stakiran.hatenablog.com/entry/2018/08/02/202816">MkDocs でスペース2個のインデントをリストのネストとして認識させたい場合</a></li>
+<li><a href="https://qiita.com/aqua_ix/items/0433f85330087c62bffa">Gitで毎回パスワードを聞かれないようにする</a></li>
+</ul>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": ".", "features": [], "search": "assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="assets/javascripts/bundle.2a6f1dda.min.js"></script>
+      
+    
+  </body>
+</html>

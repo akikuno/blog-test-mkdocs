@@ -1,0 +1,14 @@
+site_name: テストブログ
+theme:
+  name: 'material'
+  palette:
+    primary: 'indigo'
+    accent: 'indigo'
+
+markdown_extensions:
+    - pymdownx.emoji:
+        emoji_generator: !!python/name:pymdownx.emoji.to_alt
+
+plugins:
+    - search
+    - awesome-pages
