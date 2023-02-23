@@ -1,5 +1,10 @@
 site_name: MkDocsとGitHub Pages
 
+# nav:
+#   - tags.md
+#   - index.md
+#   - "blog": ".*md"
+
 theme:
   name: 'material'
   palette:
@@ -37,6 +42,9 @@ extra_css:
 plugins:
     - search
     - awesome-pages
+    - git-revision-date-localized
+    - tags:
+        tags_file: tags.md
 
 repo_url: https://github.com/akikuno/mkdocs-and-ghpages
 repo_name: akikuno/mkdocs-and-ghpages

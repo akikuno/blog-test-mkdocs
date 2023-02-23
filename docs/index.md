@@ -1,3 +1,8 @@
+---
+tags:
+  - MkDocs
+  - GitHub Pages
+---
 # MkDocsでGitHub Pagesを運用する際のメモ
 
 ## 初期設定:gear:
