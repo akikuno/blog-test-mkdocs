@@ -46,7 +46,7 @@ mkdocs gh-deploy
 - `mkdocs.yml`を以下のように変更します
 
 ```text
-site_name: テストブログ
+site_name: MkDocsとGitHub Pages
 
 # テーマを変更します
 theme:
