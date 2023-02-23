@@ -27,8 +27,8 @@ plugins:
     - awesome-pages
 
 
-repo_url: https://github.com/akikuno/blog-test-mkdocs
-repo_name: akikuno/blog-test-mkdocs
+repo_url: https://github.com/akikuno/mkdocs-and-ghpages
+repo_name: akikuno/mkdocs-and-ghpages
 
 extra:
   generator: false

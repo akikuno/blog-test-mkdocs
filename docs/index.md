@@ -14,7 +14,7 @@ pip install -U mkdocs mkdocs-material mkdocs-awesome-pages-plugin
 ### GitHubで公開リポジトリを作ります
 
 - リポジトリ名がURLのブログタイトルになります
-> `https://akikuno.github.io/blog-test-mkdocs/`
+> `https://akikuno.github.io/mkdocs-and-ghpages/`
 
 - **公開リポジトリを作るだけでOKです**
     - [GitHub Pagesのチュートリアルにある設定](https://docs.github.com/ja/pages/quickstart)はしなくて良いです
@@ -22,12 +22,12 @@ pip install -U mkdocs mkdocs-material mkdocs-awesome-pages-plugin
 - 公開リポジトリをダウンロードします
 
 ```bash
-git clone https://akikuno.github.io/blog-test-mkdocs/
+git clone https://akikuno.github.io/mkdocs-and-ghpages/
 ```
 
 ### mkdocsで記事を作ります
 
-- ダウンロードした`blog-test-mkdocs`ディレクトリ下で、以下のコマンドを実行します
+- ダウンロードした`mkdocs-and-ghpages`ディレクトリ下で、以下のコマンドを実行します
 
 ```bash
 mkdocs new .
