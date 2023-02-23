@@ -115,6 +115,26 @@ echo "order: desc" > docs/blog/.pages
 
 - 👆これで`docs/blog`内にあるファイルは逆順（降順）に表示されるようになります
 
+### ライト・ナイトモードの切り替え
+
+- `mkdocs.yml`の`theme`下に以下のテキストを追記します
+
+```text
+theme:
+  (~~~~~なにかの設定~~~~~)
+  palette:
+    # Palette toggle for light mode
+    - scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+```
+
 ## そのほか注意点⚠️
 
 ### mkdocsのインデントについて
@@ -134,7 +154,52 @@ git config --global credential.helper store
 
 [MkDocsによるドキュメント作成](https://zenn.dev/mebiusbox/articles/81d977a72cee01)
 
-- 著作権の表示やジェネレーターの表記をオフにするなど便利機能が網羅的に紹介されております
+- 著作権表示やジェネレーターの表記をオフにするなど便利機能がいっぱいあります
+
+
+### ライト・ナイトモードの切り替えとテーマ色の設定
+
+- ライト・ナイトモードの切り替えを使用するときには、それぞれのsheme内にテーマ色を設定しないと反映されません
+
+- 以下はOKな例です:ok_hand:
+
+```text
+theme:
+  name: 'material'
+  palette:
+    - scheme: default
+      primary: 'teal'
+      accent: 'teal'
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      primary: 'teal'
+      accent: 'teal'
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+```
+
+- 以下はダメな例です:no_good:
+
+```text
+theme:
+  name: 'material'
+  palette:
+    primary: 'teal'
+    accent: 'teal'
+    - scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+```
+
+- ダメな例でもエラーなくデプロイされるので、原因がわかるまで時間がかかりました…
 
 ## 参考資料 :bow:
 
