@@ -1,15 +1,14 @@
 # MkDocsでGitHub Pagesを運用する際のメモ
 
-## 初期設定
+## 初期設定:gear:
 
 ### 必要なものをインストールします
 
-- `mkdocs`と`mkdocs-material`（テーマ）をインストールします
+- `mkdocs`と`mkdocs-material`（テーマ）、`mkdocs-awesome-pages-plugin`（記事を降順に並び替えるときに利用）をインストールします
 
 ```bash
 pip install -U pip
-pip install -U mkdocs mkdocs-material 
-pip install -U mkdocs mkdocs-material 
+pip install -U mkdocs mkdocs-material mkdocs-awesome-pages-plugin
 ```
 
 ### GitHubで公開リポジトリを作ります
@@ -68,7 +67,7 @@ markdown_extensions:
 mkdocs gh-deploy
 ```
 
-## 複数記事の投稿
+## 複数記事の投稿📚
 
 - `docs`直下に記事をアップしているとサイドバーが見にくくなるので、サイドバーに項目を作ります
 
@@ -87,7 +86,7 @@ echo "# blog2" > docs/blog/blog2.md
 mkdocs gh-deploy
 ```
 
-### 記事の表示順を降順にしたいとこ
+### 記事の表示順を降順にしたい
 
 - シンプルにURL（マークダウンファイル名）の辞書順のようです
     - 以下の構成では`1000-01-01`が`1000-01-02`の前に表示されます
@@ -99,6 +98,16 @@ echo "# 100" > docs/blog/1000-01-02.md
 
 - 表示順を日付（ファイル名）の逆順にしたいときには[MkDocs Awesome Pages Plugin](https://github.com/lukasgeiter/mkdocs-awesome-pages-plugin)を使います
 
+- `mkdocs.yml`に以下を追記します
+
+```text
+plugins:
+    - search
+    - awesome-pages
+```
+
+- `.pages`に降順設定を書き込むと、`.pages`のあるフォルダ内の記事に設定が反映されます
+
 ```bash
 pip install -U mkdocs-awesome-pages-plugin
 echo "order: desc" > docs/blog/.pages
@@ -106,7 +115,7 @@ echo "order: desc" > docs/blog/.pages
 
 - 👆これで`docs/blog`内にあるファイルは逆順（降順）に表示されるようになります
 
-## そのほか注意点
+## そのほか注意点⚠️
 
 ### mkdocsのインデントについて
 
@@ -120,6 +129,12 @@ echo "order: desc" > docs/blog/.pages
 ```bash
 git config --global credential.helper store
 ```
+
+### `yaml`の書き方いろいろ
+
+[MkDocsによるドキュメント作成](https://zenn.dev/mebiusbox/articles/81d977a72cee01)
+
+- 著作権表示やジェネレーターの表記をオフにするなど便利機能がいっぱいあります
 
 ## 参考資料 :bow:
 

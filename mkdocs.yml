@@ -1,4 +1,4 @@
-site_name: テストブログ
+site_name: MkDocsとGitHub Pages
 theme:
   name: 'material'
   palette:
@@ -12,3 +12,18 @@ markdown_extensions:
 plugins:
     - search
     - awesome-pages
+
+
+repo_url: https://github.com/akikuno/blog-test-mkdocs
+repo_name: akikuno/blog-test-mkdocs
+
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/akikuno_sh
+      name: akikuno on Twitter
+    - icon: fontawesome/brands/github
+      link: https://github.com/akikuno/
+
+copyright: "&copy; 2023- akikuno"
