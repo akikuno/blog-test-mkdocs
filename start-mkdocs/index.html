@@ -12,7 +12,7 @@
         <link rel="prev" href="..">
       
       
-        <link rel="next" href="../blog/blog1/">
+        <link rel="next" href="../blog/1000-01-01/">
       
       <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.13">
@@ -287,10 +287,23 @@
     複数記事の投稿
   </a>
   
+    <nav class="md-nav" aria-label="複数記事の投稿">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    表示順は？
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
+  <a href="#_6" class="md-nav__link">
     そのほか注意点
   </a>
   
@@ -317,7 +330,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
+  <a href="#_7" class="md-nav__link">
     参考資料 🙇
   </a>
   
@@ -359,6 +372,34 @@
           Blog
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../blog/1000-01-01/" class="md-nav__link">
+        after
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../blog/1000-01-02/" class="md-nav__link">
+        before
+      </a>
+    </li>
+  
+
+            
           
             
               
@@ -473,10 +514,23 @@
     複数記事の投稿
   </a>
   
+    <nav class="md-nav" aria-label="複数記事の投稿">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    表示順は？
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
+  <a href="#_6" class="md-nav__link">
     そのほか注意点
   </a>
   
@@ -503,7 +557,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
+  <a href="#_7" class="md-nav__link">
     参考資料 🙇
   </a>
   
@@ -531,7 +585,8 @@
 <li><code>mkdocs</code>と<code>mkdocs-material</code>（テーマ）をインストールします</li>
 </ul>
 <pre><code class="language-bash">pip install -U pip
-pip install -U mkdocs mkdocs-material
+pip install -U mkdocs mkdocs-material 
+pip install -U mkdocs mkdocs-material 
 </code></pre>
 <h3 id="github">GitHubで公開リポジトリを作ります</h3>
 <ul>
@@ -595,16 +650,28 @@ markdown_extensions:
 </code></pre>
 <h2 id="_4">複数記事の投稿</h2>
 <ul>
-<li><code>docs</code>直下に記事をアップしているとサイドバーが見にくくなるので、サイドバーに項目を作ります</li>
+<li>
+<p><code>docs</code>直下に記事をアップしているとサイドバーが見にくくなるので、サイドバーに項目を作ります</p>
+</li>
+<li>
+<p>ここでは<code>docs</code>に<code>blog</code>ディレクトリを作ります</p>
+</li>
 </ul>
 <pre><code class="language-bash">mkdir -p docs/blog
 </code></pre>
+<ul>
+<li><code>docs/blog</code>ディレクトリに記事を2つ作ります</li>
+</ul>
 <pre><code class="language-bash">echo &quot;# blog1&quot; &gt; docs/blog/blog1.md
 echo &quot;# blog2&quot; &gt; docs/blog/blog2.md
 </code></pre>
 <pre><code class="language-bash">mkdocs gh-deploy
 </code></pre>
-<h2 id="_5">そのほか注意点</h2>
+<h3 id="_5">表示順は？</h3>
+<pre><code class="language-bash">echo &quot;# before&quot; &gt; docs/blog/1000-01-02.md
+echo &quot;# after&quot; &gt; docs/blog/1000-01-01.md
+</code></pre>
+<h2 id="_6">そのほか注意点</h2>
 <h3 id="mkdocs_1">mkdocsのインデントについて</h3>
 <ul>
 <li>リストをネストさせる時のインデントが<strong>スペース4個</strong>です<ul>
@@ -618,7 +685,7 @@ echo &quot;# blog2&quot; &gt; docs/blog/blog2.md
 </ul>
 <pre><code class="language-bash">git config --global credential.helper store
 </code></pre>
-<h2 id="_6">参考資料 🙇</h2>
+<h2 id="_7">参考資料 🙇</h2>
 <ul>
 <li><a href="https://aiedoc.github.io/note/Tips/Mkdocs/mkdocs%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%9FGitHubPages/">mkdocsを使ったGitHub Pagesの作成方法</a></li>
 <li><a href="https://msyksphinz.hatenablog.com/entry/2018/07/14/120000">MKDocsを使ってFPGA開発日記の記事まとめページを作り直した</a></li>
