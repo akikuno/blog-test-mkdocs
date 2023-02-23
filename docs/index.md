@@ -122,17 +122,20 @@ echo "order: desc" > docs/blog/.pages
 
 ```text
 theme:
-  (~~~~~なにかの設定~~~~~)
   palette:
     # Palette toggle for light mode
     - scheme: default
+      primary: 'teal'
+      accent: 'teal'
       toggle:
-        icon: material/brightness-7
+        icon: material/weather-night
         name: Switch to dark mode
     # Palette toggle for dark mode
     - scheme: slate
+      primary: 'teal'
+      accent: 'teal'
       toggle:
-        icon: material/brightness-4
+        icon: material/weather-sunny
         name: Switch to light mode
 ```
 
