@@ -129,7 +129,7 @@ echo "order: desc" > docs/blog/.pages
 
 - `mkdocs.yml`の`theme`下に以下のテキストを追記します
 
-```text
+```yaml
 theme:
   palette:
     # Palette toggle for light mode
@@ -147,6 +147,22 @@ theme:
         icon: material/weather-sunny
         name: Switch to light mode
 ```
+
+### シンタックスハイライト
+
+- `pymdownx.highlight`と`highlight.min.js`の設定を`mkdocs.yaml`に追記します
+
+```yaml
+markdown_extensions:
+    - pymdownx.highlight
+
+extra_javascript:
+    - https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js
+    - javascripts/config.js
+extra_css:
+    - https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css
+```
+
 
 ### `yaml`の書き方いろいろ
 
@@ -176,7 +192,7 @@ git config --global credential.helper store
 
 - 以下はOKな例です:ok_hand:
 
-```text
+```yaml
 theme:
   name: 'material'
   palette:
@@ -196,7 +212,7 @@ theme:
 
 - 以下はダメな例です:no_good:
 
-```text
+```yaml
 theme:
   name: 'material'
   palette:

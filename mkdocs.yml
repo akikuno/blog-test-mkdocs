@@ -19,13 +19,24 @@ theme:
         name: Switch to light mode
 
 markdown_extensions:
+    - admonition
+    - pymdownx.details
+    - pymdownx.superfences
+    - pymdownx.highlight # シンタックスハイライト
     - pymdownx.emoji:
         emoji_generator: !!python/name:pymdownx.emoji.to_alt
+
+# シンタックスハイライト
+extra_javascript:
+    - https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js
+    - javascripts/config.js
+extra_css:
+    - https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/default.min.css
+
 
 plugins:
     - search
     - awesome-pages
-
 
 repo_url: https://github.com/akikuno/mkdocs-and-ghpages
 repo_name: akikuno/mkdocs-and-ghpages
@@ -38,5 +49,9 @@ extra:
       name: akikuno on Twitter
     - icon: fontawesome/brands/github
       link: https://github.com/akikuno/
+  # 英語と日本語で検索を可能にする
+  search:
+    language: 'en, ja'
 
-copyright: "&copy; 2023- akikuno"
+
+copyright: "&copy; CC BY2023 Akihiro Kuno"
