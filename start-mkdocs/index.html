@@ -261,15 +261,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    参考
+  <a href="#git" class="md-nav__link">
+    毎回のGitの認証がめんどうなので記憶する
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#git" class="md-nav__link">
-    毎回のGitの認証が面倒くさいので記憶する
+  <a href="#_3" class="md-nav__link">
+    参考
   </a>
   
 </li>
@@ -337,15 +337,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    参考
+  <a href="#git" class="md-nav__link">
+    毎回のGitの認証がめんどうなので記憶する
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#git" class="md-nav__link">
-    毎回のGitの認証が面倒くさいので記憶する
+  <a href="#_3" class="md-nav__link">
+    参考
   </a>
   
 </li>
@@ -390,7 +390,7 @@ pip install -U mkdocs mkdocs-material
 </code></pre>
 <ul>
 <li><code>blog</code>はなんでも構いません</li>
-<li>おそらく何を使っても関係ない文字です</li>
+<li>（たぶん）どんな文字を使っても使ってもブログには反映されません</li>
 </ul>
 <pre><code class="language-bash">mkdocs gh-deploy -d blog
 </code></pre>
@@ -406,12 +406,16 @@ theme:
     primary: 'indigo'
     accent: 'indigo'
 </code></pre>
-<p>mkdocs gh-deploy</p>
-<h2 id="_3">参考</h2>
-<p><a href="https://aiedoc.github.io/note/Tips/Mkdocs/mkdocs%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%9FGitHubPages/">mkdocsを使ったGitHub Pagesの作成方法</a></p>
-<h2 id="git">毎回のGitの認証が面倒くさいので記憶する</h2>
+<pre><code class="language-bash">mkdocs gh-deploy -d blog
+</code></pre>
+<h2 id="git">毎回のGitの認証がめんどうなので記憶する</h2>
+<ul>
+<li>デプロイするときにマイマイGitのユーザーIDおよびパスワードを求められるので、以下のコマンドで認証を記憶すると快適です:smile:</li>
+</ul>
 <pre><code class="language-bash">git config --global credential.helper store
 </code></pre>
+<h2 id="_3">参考</h2>
+<p><a href="https://aiedoc.github.io/note/Tips/Mkdocs/mkdocs%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%9FGitHubPages/">mkdocsを使ったGitHub Pagesの作成方法</a></p>
 
 
 
