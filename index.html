@@ -307,6 +307,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#yaml" class="md-nav__link">
+    yamlの書き方いろいろ
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -506,6 +513,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#yaml" class="md-nav__link">
+    yamlの書き方いろいろ
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -632,7 +646,19 @@ echo &quot;# blog2&quot; &gt; docs/blog/blog2.md
 echo &quot;# 100&quot; &gt; docs/blog/1000-01-02.md
 </code></pre>
 <ul>
-<li>表示順を日付（ファイル名）の逆順にしたいときには<a href="https://github.com/lukasgeiter/mkdocs-awesome-pages-plugin">MkDocs Awesome Pages Plugin</a>を使います</li>
+<li>
+<p>表示順を日付（ファイル名）の逆順にしたいときには<a href="https://github.com/lukasgeiter/mkdocs-awesome-pages-plugin">MkDocs Awesome Pages Plugin</a>を使います</p>
+</li>
+<li>
+<p><code>mkdocs.yml</code>に以下を追記します</p>
+</li>
+</ul>
+<pre><code class="language-text">plugins:
+    - search
+    - awesome-pages
+</code></pre>
+<ul>
+<li><code>.pages</code>に降順設定を書き込むと、<code>.pages</code>のあるフォルダ内の記事に設定が反映されます</li>
 </ul>
 <pre><code class="language-bash">pip install -U mkdocs-awesome-pages-plugin
 echo &quot;order: desc&quot; &gt; docs/blog/.pages
@@ -654,6 +680,8 @@ echo &quot;order: desc&quot; &gt; docs/blog/.pages
 </ul>
 <pre><code class="language-bash">git config --global credential.helper store
 </code></pre>
+<h3 id="yaml"><code>yaml</code>の書き方いろいろ</h3>
+<p><a href="https://zenn.dev/mebiusbox/articles/81d977a72cee01">MkDocsによるドキュメント作成</a></p>
 <h2 id="_7">参考資料 🙇</h2>
 <ul>
 <li><a href="https://aiedoc.github.io/note/Tips/Mkdocs/mkdocs%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%9FGitHubPages/">mkdocsを使ったGitHub Pagesの作成方法</a></li>
@@ -684,11 +712,10 @@ echo &quot;order: desc&quot; &gt; docs/blog/.pages
     <div class="md-footer-meta__inner md-grid">
       <div class="md-copyright">
   
+    <div class="md-copyright__highlight">
+      &copy; 2022 mebiusbox
+    </div>
   
-    Made with
-    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
-      Material for MkDocs
-    </a>
   
 </div>
       
