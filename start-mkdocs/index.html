@@ -268,14 +268,34 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    そのほか注意点
+  </a>
+  
+    <nav class="md-nav" aria-label="そのほか注意点">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mkdocs_1" class="md-nav__link">
+    mkdocsのインデントについて
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#git" class="md-nav__link">
     毎回のGitの認証がめんどうなので記憶する
   </a>
   
 </li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#_4" class="md-nav__link">
     参考
   </a>
   
@@ -351,14 +371,34 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    そのほか注意点
+  </a>
+  
+    <nav class="md-nav" aria-label="そのほか注意点">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mkdocs_1" class="md-nav__link">
+    mkdocsのインデントについて
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#git" class="md-nav__link">
     毎回のGitの認証がめんどうなので記憶する
   </a>
   
 </li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#_4" class="md-nav__link">
     参考
   </a>
   
@@ -415,9 +455,11 @@ pip install -U mkdocs mkdocs-material
 <h2 id="_2">テーマを変更します</h2>
 <ul>
 <li>デフォルトでも十分見やすいですが、せっかくなのでテーマを変更してみます</li>
-<li>ついでに絵文字を表示できるようにします</li>
 <li>
-<p><code>:smile:</code>という表記で絵文字が表示できるようになります😄</p>
+<p>ついでに絵文字を表示できるようにします</p>
+<ul>
+<li><code>:smile:</code>という表記で絵文字が表示できるようになります😄</li>
+</ul>
 </li>
 <li>
 <p><code>mkdocs.yml</code>を以下のように変更します</p>
@@ -442,13 +484,21 @@ markdown_extensions:
 </ul>
 <pre><code class="language-bash">mkdocs gh-deploy
 </code></pre>
-<h2 id="git">毎回のGitの認証がめんどうなので記憶する</h2>
+<h2 id="_3">そのほか注意点</h2>
+<h3 id="mkdocs_1">mkdocsのインデントについて</h3>
+<ul>
+<li>リストをネストさせる時のインデントが<strong>スペース4個</strong>です<ul>
+<li>スペース2個では反映されません</li>
+</ul>
+</li>
+</ul>
+<h3 id="git">毎回のGitの認証がめんどうなので記憶する</h3>
 <ul>
 <li>デプロイするときにマイマイGitのユーザーIDおよびパスワードを求められるので、以下のコマンドで認証を記憶すると快適です😄</li>
 </ul>
 <pre><code class="language-bash">git config --global credential.helper store
 </code></pre>
-<h2 id="_3">参考</h2>
+<h2 id="_4">参考</h2>
 <p><a href="https://aiedoc.github.io/note/Tips/Mkdocs/mkdocs%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%9FGitHubPages/">mkdocsを使ったGitHub Pagesの作成方法</a></p>
 
 
