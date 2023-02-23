@@ -436,13 +436,13 @@ theme:
     primary: 'indigo'
     accent: 'indigo'
 
-# ついでに
-
+# ついでに絵文字も認識されるようにします
 markdown_extensions:
     - pymdownx.emoji:
         emoji_generator: !!python/name:pymdownx.emoji.to_alt
 </code></pre>
-<pre><code class="language-bash">mkdocs gh-deploy -d blog
+<p>絵文字の設定をすることで、<code>:smile:</code>という表記で絵文字が表示できるようになります😄</p>
+<pre><code class="language-bash">mkdocs gh-deploy
 </code></pre>
 <h2 id="git">毎回のGitの認証がめんどうなので記憶する</h2>
 <ul>
