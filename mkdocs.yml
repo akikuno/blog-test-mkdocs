@@ -7,6 +7,7 @@ site_name: MkDocsとGitHub Pages
 
 theme:
   name: 'material'
+  favicon: images/favicon.png
   palette:
     # Palette toggle for light mode
     - scheme: default
