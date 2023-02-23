@@ -670,10 +670,21 @@ pip install -U mkdocs mkdocs-material mkdocs-awesome-pages-plugin
 </blockquote>
 </li>
 <li>
-<p>通常のGitHub Pagesのチュートリアルにある「SettingからPages」の設定はしなくて大丈夫です</p>
+<p><strong>公開リポジトリを作るだけでOKです</strong></p>
+<ul>
+<li><a href="https://docs.github.com/ja/pages/quickstart">GitHub Pagesのチュートリアルにある設定</a>はしなくて良いです</li>
+</ul>
+</li>
+<li>
+<p>公開リポジトリをダウンロードします</p>
 </li>
 </ul>
+<pre><code class="language-bash">git clone https://akikuno.github.io/blog-test-mkdocs/
+</code></pre>
 <h3 id="mkdocs">mkdocsで記事を作ります</h3>
+<ul>
+<li>ダウンロードした<code>blog-test-mkdocs</code>ディレクトリ下で、以下のコマンドを実行します</li>
+</ul>
 <pre><code class="language-bash">mkdocs new .
 </code></pre>
 <ul>
@@ -708,8 +719,8 @@ pip install -U mkdocs mkdocs-material mkdocs-awesome-pages-plugin
 theme:
   name: 'material'
   palette:
-    primary: 'indigo'
-    accent: 'indigo'
+    primary: 'teal'
+    accent: 'teal'
 
 # 絵文字を表示します
 markdown_extensions:
@@ -742,7 +753,7 @@ echo &quot;# blog2&quot; &gt; docs/blog/blog2.md
 </code></pre>
 <h3 id="_5">記事の表示順を降順にしたい</h3>
 <ul>
-<li>シンプルにURL（マークダウンファイル名）の辞書順のようです<ul>
+<li>シンプルにURL（マークダウンファイル名）の辞書順（昇順）のようです<ul>
 <li>以下の構成では<code>1000-01-01</code>が<code>1000-01-02</code>の前に表示されます</li>
 </ul>
 </li>
@@ -752,7 +763,7 @@ echo &quot;# 100&quot; &gt; docs/blog/1000-01-02.md
 </code></pre>
 <ul>
 <li>
-<p>表示順を日付（ファイル名）の逆順にしたいときには<a href="https://github.com/lukasgeiter/mkdocs-awesome-pages-plugin">MkDocs Awesome Pages Plugin</a>を使います</p>
+<p>表示順を日付（ファイル名）の降順にしたいときには<a href="https://github.com/lukasgeiter/mkdocs-awesome-pages-plugin">MkDocs Awesome Pages Plugin</a>を使います</p>
 </li>
 <li>
 <p><code>mkdocs.yml</code>に以下を追記します</p>

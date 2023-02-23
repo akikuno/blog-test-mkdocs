@@ -16,9 +16,18 @@ pip install -U mkdocs mkdocs-material mkdocs-awesome-pages-plugin
 - リポジトリ名がURLのブログタイトルになります
 > `https://akikuno.github.io/blog-test-mkdocs/`
 
-- 通常のGitHub Pagesのチュートリアルにある「SettingからPages」の設定はしなくて大丈夫です
+- **公開リポジトリを作るだけでOKです**
+    - [GitHub Pagesのチュートリアルにある設定](https://docs.github.com/ja/pages/quickstart)はしなくて良いです
+
+- 公開リポジトリをダウンロードします
+
+```bash
+git clone https://akikuno.github.io/blog-test-mkdocs/
+```
 
 ### mkdocsで記事を作ります
+
+- ダウンロードした`blog-test-mkdocs`ディレクトリ下で、以下のコマンドを実行します
 
 ```bash
 mkdocs new .
@@ -52,8 +61,8 @@ site_name: MkDocsとGitHub Pages
 theme:
   name: 'material'
   palette:
-    primary: 'indigo'
-    accent: 'indigo'
+    primary: 'teal'
+    accent: 'teal'
 
 # 絵文字を表示します
 markdown_extensions:
@@ -88,7 +97,7 @@ mkdocs gh-deploy
 
 ### 記事の表示順を降順にしたい
 
-- シンプルにURL（マークダウンファイル名）の辞書順のようです
+- シンプルにURL（マークダウンファイル名）の辞書順（昇順）のようです
     - 以下の構成では`1000-01-01`が`1000-01-02`の前に表示されます
 
 ```bash
@@ -96,7 +105,7 @@ echo "# 200" > docs/blog/1000-01-01.md
 echo "# 100" > docs/blog/1000-01-02.md
 ```
 
-- 表示順を日付（ファイル名）の逆順にしたいときには[MkDocs Awesome Pages Plugin](https://github.com/lukasgeiter/mkdocs-awesome-pages-plugin)を使います
+- 表示順を日付（ファイル名）の降順にしたいときには[MkDocs Awesome Pages Plugin](https://github.com/lukasgeiter/mkdocs-awesome-pages-plugin)を使います
 
 - `mkdocs.yml`に以下を追記します
 
