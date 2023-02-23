@@ -9,15 +9,15 @@
       
       
       
-        <link rel="prev" href="../tag%E3%82%92%E3%81%A4%E3%81%91%E3%81%A6%E3%81%BF%E3%82%8B/">
+        <link rel="prev" href="../favicon/">
       
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../../images/favicon.svg">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.13">
     
     
       
-        <title>最終変更日時を追加する - MkDocsとGitHub Pages</title>
+        <title>tagをつけてみる - MkDocsとGitHub Pages</title>
       
     
     
@@ -71,7 +71,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#tag" class="md-skip">
           Skip to content
         </a>
       
@@ -104,7 +104,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              最終変更日時を追加する
+              tagをつけてみる
             
           </span>
         </div>
@@ -356,8 +356,22 @@
   
   
     <li class="md-nav__item">
-      <a href="../tag%E3%82%92%E3%81%A4%E3%81%91%E3%81%A6%E3%81%BF%E3%82%8B/" class="md-nav__link">
-        tagをつけてみる
+      <a href="../editeddate/" class="md-nav__link">
+        最終更新日時を追加する
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../favicon/" class="md-nav__link">
+        faviconを変更する
       </a>
     </li>
   
@@ -380,7 +394,7 @@
       
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        最終変更日時を追加する
+        tagをつけてみる
       </a>
       
     </li>
@@ -427,24 +441,49 @@
                   
   
 
+  <nav class="md-tags" >
+    
+      
+      
+        <a href="../../tags/#tags" class="md-tag">tags</a>
+      
+    
+  </nav>
+
 
 
   
   
 
 
-<h1 id="_1">最終変更日時を追加する</h1>
+<h1 id="tag">tagをつけてみる</h1>
 <ul>
-<li><code>mkdocs-git-revision-date-localized-plugin</code>をインストールします</li>
-</ul>
-<div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>-U<span class="w"> </span>mkdocs-git-revision-date-localized-plugin
-</code></pre></div>
-<ul>
-<li><code>mkdocs.yaml</code>に以下を加筆します</li>
+<li><code>mkdocs.yml</code>の<code>plugins</code>に以下のように<code>tags</code>を追加します</li>
 </ul>
 <div class="highlight"><pre><span></span><code><span class="nt">plugins</span><span class="p">:</span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">git-revision-date-localized</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">search</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">awesome-pages</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">tags</span><span class="p">:</span>
+<span class="w">        </span><span class="nt">tags_file</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">tags.md</span>
 </code></pre></div>
+<ul>
+<li>マークダウンファイルのyamlに以下を記載します</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="nn">---</span>
+<span class="nt">tags</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">tags</span>
+<span class="nn">---</span>
+</code></pre></div>
+<ul>
+<li><code>tags.md</code>をdocsディレクトリに作ります</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="gh"># タグ一覧</span>
+
+[TAGS]
+</code></pre></div>
+<ul>
+<li>ブログで「タグ一覧」をクリックすると、タグが一覧できます</li>
+</ul>
 
   <hr>
 <div class="md-source-file">
