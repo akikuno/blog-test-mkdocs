@@ -40,6 +40,8 @@
       
     
     
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/default.min.css">
+    
     <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -349,6 +351,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    シンタックスハイライト
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#yaml" class="md-nav__link">
     yamlの書き方いろいろ
   </a>
@@ -361,7 +370,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_8" class="md-nav__link">
+  <a href="#_9" class="md-nav__link">
     注意点⚠️
   </a>
   
@@ -383,7 +392,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_9" class="md-nav__link">
+  <a href="#_10" class="md-nav__link">
     ライト・ナイトモードの切り替えを用いるとテーマ色の設定が反映されない
   </a>
   
@@ -395,7 +404,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_10" class="md-nav__link">
+  <a href="#_11" class="md-nav__link">
     参考資料 🙇
   </a>
   
@@ -582,6 +591,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    シンタックスハイライト
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#yaml" class="md-nav__link">
     yamlの書き方いろいろ
   </a>
@@ -594,7 +610,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_8" class="md-nav__link">
+  <a href="#_9" class="md-nav__link">
     注意点⚠️
   </a>
   
@@ -616,7 +632,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_9" class="md-nav__link">
+  <a href="#_10" class="md-nav__link">
     ライト・ナイトモードの切り替えを用いるとテーマ色の設定が反映されない
   </a>
   
@@ -628,7 +644,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_10" class="md-nav__link">
+  <a href="#_11" class="md-nav__link">
     参考資料 🙇
   </a>
   
@@ -658,9 +674,9 @@
 <ul>
 <li><code>mkdocs</code>と<code>mkdocs-material</code>（テーマ）、<code>mkdocs-awesome-pages-plugin</code>（記事を降順に並び替えるときに利用）をインストールします</li>
 </ul>
-<pre><code class="language-bash">pip install -U pip
-pip install -U mkdocs mkdocs-material mkdocs-awesome-pages-plugin
-</code></pre>
+<div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>-U<span class="w"> </span>pip
+pip<span class="w"> </span>install<span class="w"> </span>-U<span class="w"> </span>mkdocs<span class="w"> </span>mkdocs-material<span class="w"> </span>mkdocs-awesome-pages-plugin
+</code></pre></div>
 <h3 id="github">GitHubで公開リポジトリを作ります</h3>
 <ul>
 <li>
@@ -679,21 +695,21 @@ pip install -U mkdocs mkdocs-material mkdocs-awesome-pages-plugin
 <p>公開リポジトリをダウンロードします</p>
 </li>
 </ul>
-<pre><code class="language-bash">git clone https://akikuno.github.io/mkdocs-and-ghpages/
-</code></pre>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>https://akikuno.github.io/mkdocs-and-ghpages/
+</code></pre></div>
 <h3 id="mkdocs">mkdocsで記事を作ります</h3>
 <ul>
 <li>ダウンロードした<code>mkdocs-and-ghpages</code>ディレクトリ下で、以下のコマンドを実行します</li>
 </ul>
-<pre><code class="language-bash">mkdocs new .
-</code></pre>
+<div class="highlight"><pre><span></span><code>mkdocs<span class="w"> </span>new<span class="w"> </span>.
+</code></pre></div>
 <ul>
 <li>ディレクトリ直下に<code>docs</code>, <code>mkdocs.yml</code>の2つが作られます</li>
 <li><code>docs</code>ディレクトリに<code>index.md</code>が作られます</li>
 </ul>
 <h3 id="github-pages">GitHub Pagesにデプロイします</h3>
-<pre><code class="language-bash">mkdocs gh-deploy
-</code></pre>
+<div class="highlight"><pre><span></span><code>mkdocs<span class="w"> </span>gh-deploy
+</code></pre></div>
 <ul>
 <li>ディレクトリ直下に<code>site</code>が作られます<ul>
 <li><code>site</code>はとくに気にしなくて大丈夫です</li>
@@ -713,44 +729,44 @@ pip install -U mkdocs mkdocs-material mkdocs-awesome-pages-plugin
 <p><code>mkdocs.yml</code>を以下のように変更します</p>
 </li>
 </ul>
-<pre><code class="language-text">site_name: MkDocsとGitHub Pages
+<div class="highlight"><pre><span></span><code>site_name: MkDocsとGitHub Pages
 
 # テーマを変更します
 theme:
-  name: 'material'
+  name: &#39;material&#39;
   palette:
-    primary: 'teal'
-    accent: 'teal'
+    primary: &#39;teal&#39;
+    accent: &#39;teal&#39;
 
 # 絵文字を表示します
 markdown_extensions:
     - pymdownx.emoji:
         emoji_generator: !!python/name:pymdownx.emoji.to_alt
-</code></pre>
+</code></pre></div>
 <ul>
 <li><code>mkdocs.yml</code>を書き換えたあと、デプロイすれば反映されます</li>
 </ul>
-<pre><code class="language-bash">mkdocs gh-deploy
-</code></pre>
+<div class="highlight"><pre><span></span><code>mkdocs<span class="w"> </span>gh-deploy
+</code></pre></div>
 <h2 id="_4">複数記事の投稿📚</h2>
 <ul>
 <li>
 <p><code>docs</code>直下に記事をアップしているとサイドバーが見にくくなるので、サイドバーに項目を作ります</p>
 </li>
 <li>
-<p>ここでは<code>docs</code>に<code>blog</code>ディレクトリを作ります</p>
+<p>ここでは<code>docs</code>に<code>blog</code>ディレクトリを作ります
+<div class="highlight"><pre><span></span><code>mkdir<span class="w"> </span>-p<span class="w"> </span>docs/blog
+</code></pre></div></p>
+</li>
+<li>
+<p><code>docs/blog</code>ディレクトリに記事を2つ作ります
+<div class="highlight"><pre><span></span><code><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;# blog1&quot;</span><span class="w"> </span>&gt;<span class="w"> </span>docs/blog/blog1.md
+<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;# blog2&quot;</span><span class="w"> </span>&gt;<span class="w"> </span>docs/blog/blog2.md
+</code></pre></div></p>
 </li>
 </ul>
-<pre><code class="language-bash">mkdir -p docs/blog
-</code></pre>
-<ul>
-<li><code>docs/blog</code>ディレクトリに記事を2つ作ります</li>
-</ul>
-<pre><code class="language-bash">echo &quot;# blog1&quot; &gt; docs/blog/blog1.md
-echo &quot;# blog2&quot; &gt; docs/blog/blog2.md
-</code></pre>
-<pre><code class="language-bash">mkdocs gh-deploy
-</code></pre>
+<div class="highlight"><pre><span></span><code>mkdocs<span class="w"> </span>gh-deploy
+</code></pre></div>
 <h3 id="_5">記事の表示順を降順にしたい</h3>
 <ul>
 <li>シンプルにURL（マークダウンファイル名）の辞書順（昇順）のようです<ul>
@@ -758,9 +774,9 @@ echo &quot;# blog2&quot; &gt; docs/blog/blog2.md
 </ul>
 </li>
 </ul>
-<pre><code class="language-bash">echo &quot;# 200&quot; &gt; docs/blog/1000-01-01.md
-echo &quot;# 100&quot; &gt; docs/blog/1000-01-02.md
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;# 200&quot;</span><span class="w"> </span>&gt;<span class="w"> </span>docs/blog/1000-01-01.md
+<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;# 100&quot;</span><span class="w"> </span>&gt;<span class="w"> </span>docs/blog/1000-01-02.md
+</code></pre></div>
 <ul>
 <li>
 <p>表示順を日付（ファイル名）の降順にしたいときには<a href="https://github.com/lukasgeiter/mkdocs-awesome-pages-plugin">MkDocs Awesome Pages Plugin</a>を使います</p>
@@ -769,16 +785,16 @@ echo &quot;# 100&quot; &gt; docs/blog/1000-01-02.md
 <p><code>mkdocs.yml</code>に以下を追記します</p>
 </li>
 </ul>
-<pre><code class="language-text">plugins:
+<div class="highlight"><pre><span></span><code>plugins:
     - search
     - awesome-pages
-</code></pre>
+</code></pre></div>
 <ul>
 <li><code>.pages</code>に降順設定を書き込むと、<code>.pages</code>のあるフォルダ内の記事に設定が反映されます</li>
 </ul>
-<pre><code class="language-bash">pip install -U mkdocs-awesome-pages-plugin
-echo &quot;order: desc&quot; &gt; docs/blog/.pages
-</code></pre>
+<div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>-U<span class="w"> </span>mkdocs-awesome-pages-plugin
+<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;order: desc&quot;</span><span class="w"> </span>&gt;<span class="w"> </span>docs/blog/.pages
+</code></pre></div>
 <ul>
 <li>👆これで<code>docs/blog</code>内にあるファイルは逆順（降順）に表示されるようになります</li>
 </ul>
@@ -787,35 +803,48 @@ echo &quot;order: desc&quot; &gt; docs/blog/.pages
 <ul>
 <li><code>mkdocs.yml</code>の<code>theme</code>下に以下のテキストを追記します</li>
 </ul>
-<pre><code class="language-text">theme:
+<div class="highlight"><pre><span></span><code>theme:
   palette:
     # Palette toggle for light mode
     - scheme: default
-      primary: 'teal'
-      accent: 'teal'
+      primary: &#39;teal&#39;
+      accent: &#39;teal&#39;
       toggle:
         icon: material/weather-night
         name: Switch to dark mode
     # Palette toggle for dark mode
     - scheme: slate
-      primary: 'teal'
-      accent: 'teal'
+      primary: &#39;teal&#39;
+      accent: &#39;teal&#39;
       toggle:
         icon: material/weather-sunny
         name: Switch to light mode
-</code></pre>
+</code></pre></div>
+<h3 id="_8">シンタックスハイライト</h3>
+<ul>
+<li><code>pymdownx.highlight</code>と<code>highlight.min.js</code>の設定を<code>mkdocs.yaml</code>に追記します</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="nt">markdown_extensions</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pymdownx.highlight</span>
+
+<span class="nt">extra_javascript</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">javascripts/config.js</span>
+<span class="nt">extra_css</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css</span>
+</code></pre></div>
 <h3 id="yaml"><code>yaml</code>の書き方いろいろ</h3>
 <p><a href="https://zenn.dev/mebiusbox/articles/81d977a72cee01">MkDocsによるドキュメント作成</a></p>
 <ul>
 <li>著作権表示やジェネレーターの表記をオフにするなど便利機能がいっぱいあります</li>
 </ul>
-<h2 id="_8">注意点⚠️</h2>
+<h2 id="_9">注意点⚠️</h2>
 <h3 id="git">毎回のGitの認証がめんどう</h3>
 <ul>
 <li>デプロイするときに毎回GitのユーザーIDおよびパスワードを求められるので、以下のコマンドで認証を記憶すると快適です😄</li>
 </ul>
-<pre><code class="language-bash">git config --global credential.helper store
-</code></pre>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>credential.helper<span class="w"> </span>store
+</code></pre></div>
 <h3 id="mkdocs_1">mkdocsのインデントが反映されない</h3>
 <ul>
 <li>リストをネストさせる時のインデントが<strong>スペース4個</strong>です<ul>
@@ -823,7 +852,7 @@ echo &quot;order: desc&quot; &gt; docs/blog/.pages
 </ul>
 </li>
 </ul>
-<h3 id="_9">ライト・ナイトモードの切り替えを用いるとテーマ色の設定が反映されない</h3>
+<h3 id="_10">ライト・ナイトモードの切り替えを用いるとテーマ色の設定が反映されない</h3>
 <ul>
 <li>
 <p>ライト・ナイトモードの切り替えを使用するときには、それぞれのsheme内にテーマ色を設定しないと反映されません</p>
@@ -832,30 +861,30 @@ echo &quot;order: desc&quot; &gt; docs/blog/.pages
 <p>以下はOKな例です👌</p>
 </li>
 </ul>
-<pre><code class="language-text">theme:
-  name: 'material'
+<div class="highlight"><pre><span></span><code>theme:
+  name: &#39;material&#39;
   palette:
     - scheme: default
-      primary: 'teal'
-      accent: 'teal'
+      primary: &#39;teal&#39;
+      accent: &#39;teal&#39;
       toggle:
         icon: material/weather-night
         name: Switch to dark mode
     - scheme: slate
-      primary: 'teal'
-      accent: 'teal'
+      primary: &#39;teal&#39;
+      accent: &#39;teal&#39;
       toggle:
         icon: material/weather-sunny
         name: Switch to light mode
-</code></pre>
+</code></pre></div>
 <ul>
 <li>以下はダメな例です🙅</li>
 </ul>
-<pre><code class="language-text">theme:
-  name: 'material'
+<div class="highlight"><pre><span></span><code>theme:
+  name: &#39;material&#39;
   palette:
-    primary: 'teal'
-    accent: 'teal'
+    primary: &#39;teal&#39;
+    accent: &#39;teal&#39;
     - scheme: default
       toggle:
         icon: material/weather-night
@@ -864,11 +893,11 @@ echo &quot;order: desc&quot; &gt; docs/blog/.pages
       toggle:
         icon: material/weather-sunny
         name: Switch to light mode
-</code></pre>
+</code></pre></div>
 <ul>
 <li>ダメな例でもエラーなくデプロイされるので、原因がわかるまで時間がかかりました…</li>
 </ul>
-<h2 id="_10">参考資料 🙇</h2>
+<h2 id="_11">参考資料 🙇</h2>
 <ul>
 <li><a href="https://aiedoc.github.io/note/Tips/Mkdocs/mkdocs%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%9FGitHubPages/">mkdocsを使ったGitHub Pagesの作成方法</a></li>
 <li><a href="https://msyksphinz.hatenablog.com/entry/2018/07/14/120000">MKDocsを使ってFPGA開発日記の記事まとめページを作り直した</a></li>
@@ -941,6 +970,10 @@ echo &quot;order: desc&quot; &gt; docs/blog/.pages
     
     
       <script src="assets/javascripts/bundle.2a6f1dda.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js"></script>
+      
+        <script src="javascripts/config.js"></script>
       
     
   </body>
