@@ -251,24 +251,18 @@
     mkdocsで記事を作ります
   </a>
   
-    <nav class="md-nav" aria-label="mkdocsで記事を作ります">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
+</li>
+      
+        <li class="md-nav__item">
   <a href="#github-pages" class="md-nav__link">
     GitHub Pagesにデプロイします
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
-  
-</li>
       
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
-    テーマを変更する
+    テーマを変更します
   </a>
   
 </li>
@@ -340,24 +334,18 @@
     mkdocsで記事を作ります
   </a>
   
-    <nav class="md-nav" aria-label="mkdocsで記事を作ります">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
+</li>
+      
+        <li class="md-nav__item">
   <a href="#github-pages" class="md-nav__link">
     GitHub Pagesにデプロイします
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
-  
-</li>
       
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
-    テーマを変更する
+    テーマを変更します
   </a>
   
 </li>
@@ -418,30 +406,40 @@ pip install -U mkdocs mkdocs-material
 <li>ディレクトリ直下に<code>docs</code>, <code>mkdocs.yml</code>の2つが作られます</li>
 <li><code>docs</code>ディレクトリに<code>index.md</code>が作られます</li>
 </ul>
-<h3 id="github-pages">GitHub Pagesにデプロイします</h3>
+<h2 id="github-pages">GitHub Pagesにデプロイします</h2>
 <pre><code class="language-bash">mkdocs gh-deploy
 </code></pre>
 <ul>
 <li>ディレクトリ直下に<code>site</code>が作られます</li>
 </ul>
-<h2 id="_2">テーマを変更する</h2>
+<h2 id="_2">テーマを変更します</h2>
 <ul>
 <li>デフォルトでも十分見やすいですが、せっかくなのでテーマを変更してみます</li>
-<li><code>blog/mkdocs.yml</code>を以下のように変更します</li>
+<li>ついでに絵文字を表示できるようにします</li>
+<li>
+<p><code>:smile:</code>という表記で絵文字が表示できるようになります😄</p>
+</li>
+<li>
+<p><code>mkdocs.yml</code>を以下のように変更します</p>
+</li>
 </ul>
 <pre><code class="language-text">site_name: テストブログ
+
+# テーマを変更します
 theme:
   name: 'material'
   palette:
     primary: 'indigo'
     accent: 'indigo'
 
-# ついでに絵文字も認識されるようにします
+# 絵文字を表示します
 markdown_extensions:
     - pymdownx.emoji:
         emoji_generator: !!python/name:pymdownx.emoji.to_alt
 </code></pre>
-<p>絵文字の設定をすることで、<code>:smile:</code>という表記で絵文字が表示できるようになります😄</p>
+<ul>
+<li><code>mkdocs.yml</code>を書き換えたあと、デプロイすれば反映されます</li>
+</ul>
 <pre><code class="language-bash">mkdocs gh-deploy
 </code></pre>
 <h2 id="git">毎回のGitの認証がめんどうなので記憶する</h2>
