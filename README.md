@@ -115,7 +115,7 @@ echo "order: desc" > docs/blog/.pages
 
 - 👆これで`docs/blog`内にあるファイルは逆順（降順）に表示されるようになります
 
-## そのほか
+## そのほか:bulb:
 ### ライト・ナイトモードの切り替え
 
 - `mkdocs.yml`の`theme`下に以下のテキストを追記します
