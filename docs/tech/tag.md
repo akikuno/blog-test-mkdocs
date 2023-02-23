@@ -3,7 +3,7 @@ tags:
   - tags
 ---
 
-# tagをつけてみる
+# tagをつける
 
 - `mkdocs.yml`の`plugins`に以下のように`tags`を追加します
 

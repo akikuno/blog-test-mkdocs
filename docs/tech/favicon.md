@@ -1,4 +1,4 @@
-# faviconを変更する
+# ロゴとfaviconを変更する
 
 - faviconをダウンロードします
     - 今回は[fontawesomeからSVGをダウンロード](https://fontawesome.com/icons/pen-to-square?s=regular&f=classic)し、丸背景に加工しました
@@ -10,5 +10,6 @@
 
 ```yaml
 theme:
+  logo: images/favicon.png
   favicon: images/favicon.png
 ```

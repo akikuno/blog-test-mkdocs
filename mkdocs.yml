@@ -7,6 +7,7 @@ site_name: MkDocsとGitHub Pages
 
 theme:
   name: 'material'
+  logo: images/favicon.png
   favicon: images/favicon.png
   palette:
     # Palette toggle for light mode
@@ -63,4 +64,4 @@ extra:
     language: 'en, ja'
 
 
-copyright: "&copy; CC BY2023 Akihiro Kuno"
+copyright: "&copy; CC BY 2023 Akihiro Kuno"
