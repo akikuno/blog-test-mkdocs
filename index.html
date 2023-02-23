@@ -777,17 +777,20 @@ echo &quot;order: desc&quot; &gt; docs/blog/.pages
 <li><code>mkdocs.yml</code>の<code>theme</code>下に以下のテキストを追記します</li>
 </ul>
 <pre><code class="language-text">theme:
-  (~~~~~なにかの設定~~~~~)
   palette:
     # Palette toggle for light mode
     - scheme: default
+      primary: 'teal'
+      accent: 'teal'
       toggle:
-        icon: material/brightness-7
+        icon: material/weather-night
         name: Switch to dark mode
     # Palette toggle for dark mode
     - scheme: slate
+      primary: 'teal'
+      accent: 'teal'
       toggle:
-        icon: material/brightness-4
+        icon: material/weather-sunny
         name: Switch to light mode
 </code></pre>
 <h3 id="yaml"><code>yaml</code>の書き方いろいろ</h3>
