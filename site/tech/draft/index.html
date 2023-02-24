@@ -9,17 +9,17 @@
       
       
       
-        <link rel="prev" href="../draft/">
+        <link rel="prev" href="../date/">
       
       
-        <link rel="next" href="../tag/">
+        <link rel="next" href="../favicon/">
       
       <link rel="icon" href="../../images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.13">
     
     
       
-        <title>ロゴとfaviconを変更する - MkDocsとGitHub Pages</title>
+        <title>非公開記事（下書き）を作成する - MkDocsとGitHub Pages</title>
       
     
     
@@ -73,7 +73,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#favicon" class="md-skip">
+        <a href="#_1" class="md-skip">
           Skip to content
         </a>
       
@@ -105,7 +105,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              ロゴとfaviconを変更する
+              非公開記事（下書き）を作成する
             
           </span>
         </div>
@@ -368,20 +368,6 @@
               
   
   
-  
-    <li class="md-nav__item">
-      <a href="../draft/" class="md-nav__link">
-        非公開記事（下書き）を作成する
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
     
   
   
@@ -394,9 +380,23 @@
       
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        ロゴとfaviconを変更する
+        非公開記事（下書き）を作成する
       </a>
       
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../favicon/" class="md-nav__link">
+        ロゴとfaviconを変更する
+      </a>
     </li>
   
 
@@ -461,25 +461,13 @@
   
 
 
-<h1 id="favicon">ロゴとfaviconを変更する</h1>
+<h1 id="_1">非公開記事（下書き）を作成する</h1>
 <ul>
-<li>
-<p>faviconをダウンロードします</p>
-<ul>
-<li>今回は<a href="https://fontawesome.com/icons/pen-to-square?s=regular&amp;f=classic">fontawesomeからSVGをダウンロード</a>し、丸背景に加工しました</li>
-<li>ファイル名は<code>favicon.png</code>としました</li>
+<li>非公開記事を作成するには、<code>docs</code>以外のディレクトリに保存すればOKです👌</li>
 </ul>
-</li>
-<li>
-<p><code>docs/images</code>ディレクトリにfaviconを保存します</p>
-</li>
-<li>
-<p><code>mkdocs.yml</code>に以下を追加します</p>
-</li>
-</ul>
-<div class="highlight"><pre><span></span><code><span class="nt">theme</span><span class="p">:</span>
-<span class="w">  </span><span class="nt">logo</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">images/favicon.png</span>
-<span class="w">  </span><span class="nt">favicon</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">images/favicon.png</span>
+<div class="highlight"><pre><span></span><code>mkdir<span class="w"> </span>-p<span class="w"> </span>draft
+<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;# 下書き&quot;</span><span class="w"> </span>&gt;<span class="w"> </span>draft/下書き.md
+mkdocs<span class="w"> </span>gh-deploy
 </code></pre></div>
 
   <hr>
@@ -487,7 +475,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 23, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 24, 2023</span>
       
     
   </small>
