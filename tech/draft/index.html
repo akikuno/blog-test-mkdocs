@@ -463,17 +463,15 @@
 
 <h1 id="_1">非公開記事を作成する</h1>
 <ul>
-<li>非公開記事を作成するには、<code>docs</code>以外のディレクトリに保存すればOKです👌</li>
+<li>非公開記事を作成するには、<code>docs</code>以外のディレクトリに保存すればOKです:ok_hand:</li>
 </ul>
-<div class="highlight"><pre><span></span><code>mkdir<span class="w"> </span>-p<span class="w"> </span>draft
-<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;# 下書き&quot;</span><span class="w"> </span>&gt;<span class="w"> </span>draft/下書き.md
-mkdocs<span class="w"> </span>gh-deploy
-</code></pre></div>
-<div class="admonition メモ">
-<p class="admonition-title">メモ</p>
-<p><a href="https://squidfunk.github.io/mkdocs-material/setup/setting-up-a-blog/#drafts">mkdocs公式のblogプラグインを使えばyamlの設定だけで非公開にできるようです</a><br />
-しかし、現時点（2023-02-24）では課金勢でしか使えないみたいです</p>
-</div>
+<pre><code class="language-bash">mkdir -p draft
+echo &quot;# 下書き&quot; &gt; draft/下書き.md
+mkdocs gh-deploy
+</code></pre>
+<p>!!! メモ
+    <a href="https://squidfunk.github.io/mkdocs-material/setup/setting-up-a-blog/#drafts">mkdocs公式のblogプラグインを使えばyamlの設定だけで非公開にできるようです</a><br />
+    しかし、現時点（2023-02-24）では課金勢でしか使えないみたいです</p>
 
   <hr>
 <div class="md-source-file">
