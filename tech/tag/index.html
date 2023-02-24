@@ -472,27 +472,27 @@
 <ul>
 <li><code>mkdocs.yml</code>の<code>plugins</code>に以下のように<code>tags</code>を追加します</li>
 </ul>
-<pre><code class="language-yaml">plugins:
-    - search
-    - awesome-pages
-    - tags:
-        tags_file: tags.md
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="nt">plugins</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">search</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">awesome-pages</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">tags</span><span class="p">:</span>
+<span class="w">        </span><span class="nt">tags_file</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">tags.md</span>
+</code></pre></div>
 <ul>
 <li>マークダウンファイルのyamlに以下を記載します</li>
 </ul>
-<pre><code class="language-yaml">---
-tags:
-  - tags
----
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="nn">---</span>
+<span class="nt">tags</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">tags</span>
+<span class="nn">---</span>
+</code></pre></div>
 <ul>
 <li><code>tags.md</code>をdocsディレクトリに作ります</li>
 </ul>
-<pre><code class="language-markdown"># タグ一覧
+<div class="highlight"><pre><span></span><code><span class="gh"># タグ一覧</span>
 
 [TAGS]
-</code></pre>
+</code></pre></div>
 <ul>
 <li>ブログで「タグ一覧」をクリックすると、タグが一覧できます</li>
 </ul>
@@ -528,7 +528,7 @@ tags:
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      &copy; Akihiro Kuno CC-BY <https://creativecommons.org/licenses/by/4.0>
+      &copy; Akihiro Kuno CC-BY
     </div>
   
   
