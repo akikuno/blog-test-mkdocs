@@ -26,6 +26,8 @@ theme:
         name: Switch to light mode
 
 markdown_extensions:
+    - attr_list
+    - md_in_html
     - admonition
     - pymdownx.details
     - pymdownx.superfences
@@ -45,6 +47,7 @@ plugins:
     - search
     - awesome-pages
     - git-revision-date-localized
+    - glightbox
     - tags:
         tags_file: tags.md
 
