@@ -4,8 +4,17 @@
 
 ```bash
 mkdir -p draft
-echo "# 下書き" > draft/下書き.md
+echo "# 下書き" > draft/draft.md
 mkdocs gh-deploy
+```
+
+
+- ちなみにdraftディレクトリ中のファイルをGitHubで公開されないようにするためには、`.gitignore`で以下のように設定します
+
+```text
+# draft/draft.md以外のファイルをGit管理から外します
+draft/*
+!draft/draft.md
 ```
 
 !!! メモ
